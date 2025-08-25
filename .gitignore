@@ -20,3 +20,5 @@ tmp.benchmarks/
 .env
 .env.local
 .env.*.local
+__pycache__
+.mypy_cache/
