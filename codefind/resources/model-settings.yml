@@ -1,0 +1,118 @@
+# Model settings for Bedrock-only CodeFind
+# Only AWS Bedrock models are supported
+
+- name: bedrock/us.anthropic.claude-3-7-sonnet-20250109-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+  streaming: true
+
+- name: bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0
+  edit_format: diff
+  weak_model_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+  streaming: true
+
+- name: bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+  streaming: true
+
+- name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+  streaming: true
+
+- name: bedrock/anthropic.claude-3-opus-20240229-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+  streaming: true
+
+- name: bedrock/amazon.titan-text-premier-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/amazon.titan-text-premier-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+
+- name: bedrock/meta.llama3-2-90b-instruct-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/meta.llama3-2-11b-instruct-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+
+- name: bedrock/meta.llama3-2-11b-instruct-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/meta.llama3-2-3b-instruct-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+
+- name: bedrock/meta.llama3-2-3b-instruct-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/meta.llama3-2-1b-instruct-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+
+- name: bedrock/meta.llama3-2-1b-instruct-v1:0
+  edit_format: diff
+  weak_model_name: bedrock/meta.llama3-2-1b-instruct-v1:0
+  use_repo_map: true
+  examples_as_sys_msg: true
+  reminder: user
+  use_temperature: 0.0
+
+# Model aliases for convenience
+- name: sonnet
+  actual_name: bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0
+
+- name: sonnet35
+  actual_name: bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0
+
+- name: sonnet37
+  actual_name: bedrock/us.anthropic.claude-3-7-sonnet-20250109-v1:0
+
+- name: haiku
+  actual_name: bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+
+- name: opus
+  actual_name: bedrock/anthropic.claude-3-opus-20240229-v1:0
+
+- name: titan
+  actual_name: bedrock/amazon.titan-text-premier-v1:0
+
+- name: llama90b
+  actual_name: bedrock/meta.llama3-2-90b-instruct-v1:0
+
+- name: llama11b
+  actual_name: bedrock/meta.llama3-2-11b-instruct-v1:0
+
+- name: llama3b
+  actual_name: bedrock/meta.llama3-2-3b-instruct-v1:0
+
+- name: llama1b
+  actual_name: bedrock/meta.llama3-2-1b-instruct-v1:0

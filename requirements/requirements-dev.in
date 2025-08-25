@@ -1,0 +1,11 @@
+# Testing framework
+pytest
+pytest-env
+
+# Development tools
+pip-tools
+uv
+pre-commit
+
+# Code quality
+codespell

@@ -1,0 +1,22 @@
+.DS_Store
+.vscode/
+codefind.code-workspace
+*.pyc
+.codefind*
+codefind_chat.egg-info/
+build
+dist/
+codefind/__version__.py
+codefind/_version.py
+.venv/
+venv/
+*.egg-info/
+.#*
+.gitattributes
+tmp.benchmarks/
+.docker_bash_history
+
+# Environment files - keep credentials secure
+.env
+.env.local
+.env.*.local
